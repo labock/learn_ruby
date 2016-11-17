@@ -8,9 +8,13 @@ def subtract(op1, op2)
 end
 
 def sum(list)
-	@sum = 0
-	list.each do |i|
-		@sum +=i
-	end
-	sum
+	_sum = 0
+	list.each { |i| _sum += i }
+	_sum
+end
+
+def multiply(ops)
+	_product=1
+	ops.each { |e| _product = _product*e }
+	_product
 end
